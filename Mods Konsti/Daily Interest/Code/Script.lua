@@ -61,6 +61,7 @@ PlaceObj('NotificationPreset', {
     FxAction = "UINotificationFunding",
     GameTime = false,
     Image = "UI/IconsRemaster/Notifications/funding.png",
+    NotificationTemplate = "NotificationImportant",
     RightTitle = T(
         604752595099,
         "<funding(-sum(0,'number',objects))>"
