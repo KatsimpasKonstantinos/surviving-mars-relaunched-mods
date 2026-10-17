@@ -1,0 +1,27 @@
+return PlaceObj('ModDef', {
+	'title', "Replace Quotes",
+	'description', "Replace names/quotes with other names/quotes\nYou can also remove all quotes\n\nAdded so far:\nElon Musk > Nwabudike Morgan\nVladimir Putin > Sergei Korolev\nRonald Reagan > Jimmy Carter\nVegans > Wikipedia description\n\nThere might be some quotes I missed\nOpen for suggestions\n\nCode is on:\nhttps://github.com/KatsimpasKonstantinos/surviving-mars-relaunched-mods",
+	'short_description', "Replace names/quotes with other names/quotes.\nYou can also remove all quotes.\n\nAdded so far:\nElon Musk > Nwabudike Morgan\nVladimir Putin > Sergei Korolev\nRonald Reagan > Jimmy Carter",
+	'image', "Mod/QHCAnRX/Images/icon.png",
+	'last_changes', "release",
+	'id', "QHCAnRX",
+	'author', "Konsti",
+	'version', 10,
+	'lua_revision', 350453,
+	'saved_with_revision', 406343,
+	'code', {
+		"Code/Script.lua",
+	},
+	'default_options', {
+		ElonMusk = true,
+		RemoveQuotes = false,
+		RonaldReagan = true,
+		Vegans = true,
+		VladimirPutin = true,
+	},
+	'saved', 1792251885,
+	'code_hash', -3975077989915104261,
+	'pdx_id', 163691,
+	'pdx_version', "1",
+	'steam_id', "3821584403",
+})
