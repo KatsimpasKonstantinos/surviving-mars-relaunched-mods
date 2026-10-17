@@ -1,7 +1,8 @@
 local max_limit = 1000000000000000000
 local min_limit = -1000000000000000000
 -- real limit is 64bit signed integer, but this is good enough
-local interest_rate = 1
+local default_interest_rate = 1
+local interest_rate = default_interest_rate
 local mod_name = "[Daily Interest]"
 local mod_id = CurrentModId
 local options = CurrentModOptions
@@ -9,18 +10,15 @@ local options = CurrentModOptions
 local function UpdateInterestRate()
     if not options then
         print(mod_name .. " CurrentModOptions is nil - keeping default interest rate")
-        interest_rate = 1
+        interest_rate = default_interest_rate
         return
     end
 
-    local interestrate_number = tonumber(options:GetProperty("Interestrate"))
-    if not interestrate_number then
+    interest_rate = tonumber(options:GetProperty("Interestrate"))
+    if not interest_rate then
         print(mod_name .. " ERROR: Interestrate could not be converted to a number")
-        interest_rate = 1
-        return
+        interest_rate = default_interest_rate
     end
-
-    interest_rate = interestrate_number
 end
 
 FundingSourceTexts = FundingSourceTexts or {}

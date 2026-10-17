@@ -1,0 +1,25 @@
+return PlaceObj('ModDef', {
+	'title', "Custom Speed",
+	'description', "Customize the gamespeed to up to 100x\n\nDefaults:\nNormal 1x\nMedium 5x\nFast 15x\n\nCode is on:\nhttps://github.com/KatsimpasKonstantinos/surviving-mars-relaunched-mods",
+	'short_description', "Customize the gamespeed to up to 100x\n\nDefaults:\nNormal 1x\nMedium 5x\nFast 15x",
+	'image', "Mod/DvUEtWS/Images/icon.png",
+	'last_changes', "release",
+	'id', "DvUEtWS",
+	'author', "Konsti",
+	'version', 7,
+	'lua_revision', 350453,
+	'saved_with_revision', 406343,
+	'code', {
+		"Code/Script.lua",
+	},
+	'default_options', {
+		Fastspeed = 15,
+		Mediumspeed = 5,
+		Normalspeed = 1,
+	},
+	'saved', 1792242840,
+	'code_hash', 1040234870807538113,
+	'pdx_id', 163668,
+	'pdx_version', "1",
+	'steam_id', "3821484353",
+})
