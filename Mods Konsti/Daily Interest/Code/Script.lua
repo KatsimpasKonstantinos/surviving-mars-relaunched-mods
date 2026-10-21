@@ -114,8 +114,13 @@ local function AddInterest(colony)
     end
 end
 
-function OnMsg.NewDay()
-    if not UIColony or not UIColony.funds or UICity.day <= 1 then
+function OnMsg.NewDay(day)
+    if not UIColony or not UIColony.funds then
+        return
+    end
+
+    local current_day = day or UIColony.day
+    if not current_day or current_day <= 1 then
         return
     end
 
