@@ -1,0 +1,28 @@
+return PlaceObj('ModDef', {
+	'title', "Dome Color",
+	'description', "Adjust the glass color of all your domes\n\nset custom red, green and blue values in the mod options\n\nCode is on:\nhttps://github.com/KatsimpasKonstantinos/surviving-mars-relaunched-mods",
+	'short_description', "Adjust the glass color of your domes\n\nset custom red, green and blue values in the mod options",
+	'image', "Mod/tidAuKu/Images/icon.png",
+	'last_changes', "release",
+	'id', "tidAuKu",
+	'author', "Konsti",
+	'version', 33,
+	'lua_revision', 350453,
+	'saved_with_revision', 406343,
+	'code', {
+		"Code/Script.lua",
+	},
+	'default_options', {
+		GlassBlue = 100,
+		GlassGreen = 100,
+		GlassRed = 100,
+	},
+	'saved', 1792748892,
+	'code_hash', -8549407076923467307,
+	'pdx_id', 164520,
+	'pdx_version', "1",
+	'steam_id', "3825158484",
+	'TagLightmodels', true,
+	'TagCosmetics', true,
+	'TagOther', true,
+})
